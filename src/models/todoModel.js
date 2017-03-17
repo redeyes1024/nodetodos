@@ -1,5 +1,5 @@
 'use strict';
-const mongoose = requier('mongoose');
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 let todoSchema = new Schema({

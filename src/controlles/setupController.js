@@ -2,8 +2,8 @@
 const Todos = require('../models/todoModel');
 
 module.exports = function (app) {
-    app.get('/app/setupTodos', function (req, res) {
-        var starterTodos = [
+    app.get('/api/setupTodos', function (req, res) {
+        const starterTodos = [
             {
                 "username": "user2",
                 "todo": "Ridgewood Avenue",
@@ -215,9 +215,9 @@ module.exports = function (app) {
                 "hasAttachment": false
             }
         ];
-      Todos.create(starterTodos,function (err,results) {
-          res.send(results);
-      })
+        Todos.create(starterTodos, function (err, results) {
+            res.send(results);
+        })
     })
 
 };

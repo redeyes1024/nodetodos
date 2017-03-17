@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "nodedemon server.js"
+    "start": "nodemon index.js"
   },
   "author": "Danil Skripnikov",
   "license": "ISC",
